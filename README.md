@@ -24,6 +24,11 @@ Settings UI is usually exposed on http://{hostname}/settings
 
 Web server base with build-in OTA update mechanism. Check the (ESP32Blank)[https://github.com/funnybrum/ESP32Blank] project for an example.
 
+Below is an example for doing an OTA update with curl:
+```
+curl -F "image=@.pio/build/esp32/firmware.bin" http://esp32-blank/update
+```
+
 
 ## WiFiManager
 
