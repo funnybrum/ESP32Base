@@ -40,7 +40,7 @@ A tool to automate the data publishing to InfluxDB. Requires DB that is not pass
 
 Several parameters can be configured, but the main one are - push interval, collect interval and InfluxDB address. If all of them are valid - the microcontroller will keep the WiFi off while data is being collected on regular intervals. Once the time for push has come - WiFi will be turned on, data will be pushed to the InfluxDB and the WiFi will be turned off again.
 
-TODO: Check the statement about the WiFi being shutdown when data is pushed. IIRC this has been disabled.
+Note: If the WiFiManager is not supplied to the InfluxDBCollector the WiFi will not be managed by it. This will result in WiFi being constantly on, not being turned on only when data is pushed.
 
 # Usage
 
